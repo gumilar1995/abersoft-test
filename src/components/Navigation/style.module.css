@@ -1,0 +1,19 @@
+.header {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  width: clamp(450px, 50%, 50%);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItem[data-active="true"] {
+  color: var(--color-abersoft-blue);
+  font-weight: bold;
+  font-size: 18px;
+}
