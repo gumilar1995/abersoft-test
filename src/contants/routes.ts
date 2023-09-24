@@ -13,4 +13,12 @@ export const routes: NavigationItems = [
     label: "About Us",
     href: "/about-us",
   },
+  {
+    label: "References",
+    href: "#",
+  },
+  {
+    label: "Contact",
+    href: "#",
+  },
 ];

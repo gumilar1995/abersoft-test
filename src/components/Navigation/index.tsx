@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export default function Navigation({ items }: { items: NavigationItems }) {
   const pathname = usePathname();
   return (
-    <header className={style.header}>
+    <header className={`${style.header} container`}>
       <nav className={style.navigation}>
         {items.map((item, i) => (
           <NavigationItem

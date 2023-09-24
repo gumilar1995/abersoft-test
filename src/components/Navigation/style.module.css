@@ -6,8 +6,8 @@
 
 .navigation {
   height: 100px;
+  width: 100%;
   display: flex;
-  width: clamp(450px, 50%, 50%);
   align-items: center;
   justify-content: space-between;
 }

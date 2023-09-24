@@ -4,7 +4,7 @@ import style from "./style.module.css";
 export default function FooterSection() {
   return (
     <footer className={style.container}>
-      <div className={style.details}>
+      <div className={`${style.details} container`}>
         <div className={style.detail}>
           <h6 className="font-bold text-lg">Our Services</h6>
           <p>App Development</p>
