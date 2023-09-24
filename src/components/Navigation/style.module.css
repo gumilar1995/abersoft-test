@@ -1,11 +1,11 @@
 .header {
-  margin: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .navigation {
+  height: 100px;
   display: flex;
   width: clamp(450px, 50%, 50%);
   align-items: center;
@@ -13,6 +13,7 @@
 }
 
 .navItem[data-active="true"] {
+  transition: 0.25s ease-in-out;
   color: var(--color-abersoft-blue);
   font-weight: bold;
   font-size: 18px;

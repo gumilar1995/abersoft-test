@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--color-abersoft-blue);
+  width: 100%;
+  padding: 3rem 6rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  color: var(--color-white);
+}
+
+.detail:last-child {
+  text-align: right;
+}
+
+.detail:last-child p {
+  max-width: 240px;
+  align-self: flex-end;
+}
+
+.detail p {
+  font-weight: 500;
+}
+
+.logo {
+  align-self: flex-end;
+  position: relative;
+  width: 150px;
+  aspect-ratio: 150 / 40;
+}
