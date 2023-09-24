@@ -8,12 +8,14 @@ import { useState, useEffect } from "react";
 
 export default function Navigation({ items }: { items: NavigationItems }) {
   const [showNav, setShowNav] = useState(false);
+  const [isMobile, setMobile] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     const onResize = () => {
       const width = window.innerWidth;
       setShowNav(width >= 768);
+      setMobile(width < 768);
     };
 
     onResize();
@@ -43,7 +45,7 @@ export default function Navigation({ items }: { items: NavigationItems }) {
               key={i}
               isActive={pathname === item.href}
               href={item.href}
-              onClick={() => setShowNav(false)}
+              onClick={() => setShowNav(!isMobile)}
             >
               {item.label}
             </NavigationItem>
