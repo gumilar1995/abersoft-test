@@ -3,7 +3,7 @@ import { summaries } from "@/contants/services";
 
 export default function ServiceSummaries() {
   return (
-    <section className="container grid grid-cols-3 py-8">
+    <section className="container grid grid-cols-3 py-12">
       {summaries.map((summary, i) => (
         <div key={i} className="flex items-center justify-center">
           <Card imgSrc={summary.imgSrc}>

@@ -2,7 +2,7 @@ import Content from "@/components/Content";
 
 export default function Ideas() {
   return (
-    <section className="container py-8">
+    <section className="container py-12">
       <Content center sideImageSrc="/images/jelly_bear_svg.png">
         <div className="flex flex-col items-center gap-6">
           <h1 className="font-bold text-5xl text-abersoft-blue">

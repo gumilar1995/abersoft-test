@@ -3,8 +3,19 @@
   flex-direction: column;
   gap: 1rem;
   animation: popUp 1s ease-in-out;
-  max-width: 300px;
   height: 100%;
+}
+
+.container[data-size="small"] {
+  max-width: 300px;
+}
+
+.container[data-size="medium"] {
+  max-width: 490px;
+}
+
+.container[data-size="large"] {
+  max-width: 100%;
 }
 
 .image {

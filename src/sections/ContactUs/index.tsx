@@ -39,7 +39,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="container py-8">
+    <section className="container py-12">
       <Form
         className="grid grid-cols-2 gap-6"
         methods={methods}
