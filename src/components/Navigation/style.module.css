@@ -18,3 +18,9 @@
   font-weight: bold;
   font-size: 18px;
 }
+
+@media (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+}

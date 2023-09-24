@@ -28,6 +28,16 @@
   object-fit: contain;
 }
 
+@media (max-width: 600px) {
+  .container {
+    max-width: 100% !important;
+  }
+
+  .image {
+    max-width: 300px;
+  }
+}
+
 @keyframes popUp {
   0% {
     scale: 0.1;

@@ -41,21 +41,21 @@ export default function ContactUs() {
   return (
     <section className="container py-12">
       <Form
-        className="grid grid-cols-2 gap-6"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-6"
         methods={methods}
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="flex flex-col justify-between">
-          <header className="flex flex-col gap-8">
+        <div className="flex flex-col lg:justify-between gap-6 lg:gap-0">
+          <header className="flex flex-col gap-8 text-center lg:text-left">
             <h1 className="font-bold text-5xl text-abersoft-blue">
               Contact Us
             </h1>
-            <p className="max-w-[80%]">
+            <p className="lg:max-w-[80%]">
               We know that it sometimes can be hard to know where to start.
               Let’s chat and see if we can help you!
             </p>
           </header>
-          <div className="flex items-center gap-16 pb-6">
+          <div className="flex items-center justify-around lg:justify-normal lg:gap-16 pb-6">
             <IconButton
               imgSrc="/images/facebook.png"
               href="https://facebook.com"
@@ -80,7 +80,7 @@ export default function ContactUs() {
           />
           <TextArea name="message" placeholder="Message" />
         </div>
-        <div className="flex items-center justify-end col-span-2">
+        <div className="flex items-center justify-end lg:col-span-2">
           <Button type="submit" disabled={!isValid}>
             Send
           </Button>

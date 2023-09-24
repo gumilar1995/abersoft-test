@@ -5,7 +5,7 @@ export default function Solution() {
     <section className="container py-12">
       <Content center sideImageSrc="/images/solution_image.png">
         <div className="flex flex-col items-center gap-6">
-          <h1 className="font-bold text-5xl text-abersoft-blue">
+          <h1 className="font-bold text-2xl text-abersoft-blue lg:text-5xl ">
             We help you build the tech solutions of the future.
           </h1>
           <h3>

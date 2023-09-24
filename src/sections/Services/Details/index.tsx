@@ -3,7 +3,7 @@ import { details } from "@/contants/services";
 
 export default function ServiceDetails() {
   return (
-    <section className="container grid grid-cols-2 gap-6 py-12">
+    <section className="container grid grid-cols-1 md:grid-cols-2 gap-6 py-12">
       {details.map((detail, i) => (
         <div key={i} className="flex items-center justify-center">
           <Card size="medium">
