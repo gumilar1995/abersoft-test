@@ -47,9 +47,9 @@ export default function ContactUs() {
       >
         <div className="flex flex-col justify-between">
           <header className="flex flex-col gap-8">
-            <h4 className="font-bold text-5xl text-abersoft-blue">
+            <h1 className="font-bold text-5xl text-abersoft-blue">
               Contact Us
-            </h4>
+            </h1>
             <p className="max-w-[80%]">
               We know that it sometimes can be hard to know where to start.
               Let’s chat and see if we can help you!
@@ -82,7 +82,7 @@ export default function ContactUs() {
         </div>
         <div className="flex items-center justify-end col-span-2">
           <Button type="submit" disabled={!isValid}>
-            Submit
+            Send
           </Button>
         </div>
       </Form>
