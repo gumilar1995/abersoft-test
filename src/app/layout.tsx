@@ -5,6 +5,7 @@ import { Poppins } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import { routes } from "@/contants/routes";
 import FooterSection from "@/sections/Footer";
+import ContactUs from "@/sections/ContactUs";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -25,10 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <SplashScreen />
-        <main>
-          <Navigation items={routes} />
-          {children}
-        </main>
+        <Navigation items={routes} />
+        <main>{children}</main>
+        <ContactUs />
         <FooterSection />
       </body>
     </html>

@@ -1,0 +1,21 @@
+.formControl {
+  width: 100%;
+}
+
+.formControl input[type="email"],
+.formControl input[type="password"],
+.formControl input[type="number"],
+.formControl textarea,
+.formControl input[type="text"] {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1.5rem;
+  outline: none;
+  border-radius: 30px;
+  background-color: var(--color-grey);
+}
+
+.formControl textarea {
+  min-height: 205px;
+}
