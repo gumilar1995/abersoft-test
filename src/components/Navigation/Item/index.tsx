@@ -10,6 +10,7 @@ export default function NavigationItem({
   children: ReactNode;
   isActive?: boolean;
   href: string;
+  onClick?: VoidFunction;
 }) {
   return (
     <Link className={style.navItem} data-active={isActive} {...props}>

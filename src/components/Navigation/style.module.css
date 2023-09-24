@@ -19,8 +19,46 @@
   font-size: 18px;
 }
 
+.burgerMenu {
+  display: none;
+}
+
 @media (max-width: 600px) {
+  .header {
+    justify-content: flex-end;
+    padding-top: 2rem;
+  }
+  .burgerMenu {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
   .navigation {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    gap: 1.5rem;
+    background-color: var(--color-white);
+    padding: 2rem 0;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
